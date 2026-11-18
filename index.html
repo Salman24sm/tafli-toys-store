@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="طفلي للألعاب: ألعاب تعليمية وتشاركية تنمّي مهارات الأطفال وتجمع العائلة." />
+  <title>طفلي للألعاب | ألعاب تعليمية وتشاركية للأطفال</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">شحن مجاني للطلبات بقيمة 250 ر.س فأكثر</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="العودة إلى الرئيسية">
+      <span class="brand-mark">☺</span>
+      <span><strong>طفلي</strong> للألعاب<small>نتعلم، نلعب، نجتمع</small></span>
+    </a>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a href="#home">الرئيسية</a><a href="#products">الألعاب</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="favoritesBtn" aria-label="المفضلة">♡ <span id="favoritesCount">0</span></button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="سلة المشتريات">🛒 <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">ألعاب تختارها بثقة</span>
+        <h1>اللعب اليوم... <em>مهارة</em> الغد</h1>
+        <p>ألعاب تعليمية وتشاركية مختارة بعناية لتساعد طفلك على التعلم، الإبداع، وقضاء أجمل الأوقات مع العائلة.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#products">اكتشف الألعاب</a><a class="btn btn-ghost" href="#about">لماذا طفلي؟</a></div>
+        <div class="trust-row"><span>✓ آمنة ومختبرة</span><span>✓ توصيل سريع</span><span>✓ استبدال سهل</span></div>
+      </div>
+      <div class="hero-art" aria-label="ألعاب ملونة للأطفال"><div class="sun"></div><div class="toy toy-one">🧩</div><div class="toy toy-two">🎲</div><div class="toy toy-three">🧸</div><div class="hero-card"><b>وقت ممتع</b><small>يجمع العائلة</small></div></div>
+    </section>
+
+    <section class="container section" aria-labelledby="categoriesTitle"><div class="section-heading"><div><span class="eyebrow">اختياراتنا</span><h2 id="categoriesTitle">تسوق حسب الاهتمام</h2></div></div><div class="category-grid">
+      <button class="category-card cat-blue" data-category="تعليمية"><span>🔬</span><b>تعليمية</b><small>اكتشف وتعلّم</small></button>
+      <button class="category-card cat-orange" data-category="تشاركية"><span>👨‍👩‍👧</span><b>للعائلة</b><small>نلعب معًا</small></button>
+      <button class="category-card cat-purple" data-skill="الإبداع"><span>🎨</span><b>إبداع وفن</b><small>أطلق الخيال</small></button>
+      <button class="category-card cat-green" data-age="3-5"><span>🌱</span><b>للصغار</b><small>من 3 إلى 5 سنوات</small></button>
+    </div></section>
+
+    <section class="products-section section" id="products"><div class="container"><div class="section-heading"><div><span class="eyebrow">مختارات طفلي</span><h2>ألعاب يحبها الصغار</h2></div><span id="resultsCount" class="muted"></span></div>
+      <div class="toolbar"><label class="search-box">⌕<input id="searchInput" type="search" placeholder="ابحث عن لعبة أو مهارة..." /></label><button class="filter-toggle" id="filterToggle">☷ الفلاتر</button><select id="sortSelect" aria-label="ترتيب المنتجات"><option value="featured">الأكثر صلة</option><option value="priceAsc">السعر: الأقل أولًا</option><option value="priceDesc">السعر: الأعلى أولًا</option><option value="rating">الأعلى تقييمًا</option></select></div>
+      <div class="shop-layout"><aside class="filters" id="filters"><div class="filter-head"><b>تصفية النتائج</b><button id="clearFilters">مسح الكل</button></div><label>العمر المناسب<select id="ageFilter"><option value="">كل الأعمار</option><option value="3-5">3–5 سنوات</option><option value="6-8">6–8 سنوات</option><option value="9+">9 سنوات فأكثر</option></select></label><label>نوع اللعبة<select id="typeFilter"><option value="">الكل</option><option value="تعليمية">تعليمية</option><option value="تشاركية">تشاركية</option></select></label><label>المهارة المستهدفة<select id="skillFilter"><option value="">كل المهارات</option><option value="التركيز">التركيز</option><option value="الإبداع">الإبداع</option><option value="التواصل">التواصل</option><option value="حل المشكلات">حل المشكلات</option><option value="الرياضيات">الرياضيات</option></select></label><label>السعر الأقصى <output id="priceOutput">250 ر.س</output><input id="priceFilter" type="range" min="20" max="250" value="250" step="5"></label></aside><div class="product-grid" id="productGrid"></div></div>
+    </div></section>
+
+    <section class="offer container section"><div><span class="eyebrow">عرض هذا الأسبوع</span><h2>لعبتان بسعر خاص</h2><p>اجمع بين التعلم والمرح واحصل على خصم 15% عند شراء أي لعبتين تعليميتين.</p><a class="btn btn-dark" href="#products">تسوق العرض</a></div><div class="offer-shapes">🧠 <span>+</span> 🎲</div></section>
+
+    <section class="container section testimonials"><div class="section-heading"><div><span class="eyebrow">تجارب حقيقية</span><h2>ماذا تقول العائلات؟</h2></div></div><div class="testimonial-grid"><blockquote>“لعبة البرج ساعدت ابني على التركيز، والأجمل أننا نلعبها معًا كل مساء.”<footer>— سارة، أم لطفلين <span>★★★★★</span></footer></blockquote><blockquote>“التوصيل سريع والتغليف جميل جدًا. ابنتي أحبت مختبر الألوان.”<footer>— نورة، عميلة موثوقة <span>★★★★★</span></footer></blockquote><blockquote>“أخيرًا متجر يجمع الألعاب الممتعة مع الفائدة التعليمية.”<footer>— خالد، أب ومعلم <span>★★★★☆</span></footer></blockquote></div></section>
+
+    <section class="info-section section" id="about"><div class="container info-grid"><div><span class="eyebrow">قصتنا</span><h2>نؤمن أن أفضل تعلم يبدأ بلحظة لعب.</h2><p>في طفلي للألعاب نختار ألعابًا آمنة وذكية تساعد الأطفال على النمو، وتمنح الأسرة فرصة للضحك والتواصل بعيدًا عن الشاشات.</p></div><div class="values"><div><b>🛡️ جودة وأمان</b><small>منتجات مختارة بعناية</small></div><div><b>💡 تعلم ممتع</b><small>مهارات حقيقية بلا ملل</small></div><div><b>💛 عائلة أسعد</b><small>لحظات تستحق أن نتذكرها</small></div></div></div></section>
+    <section class="container contact section" id="contact"><div><span class="eyebrow">نحن هنا لمساعدتك</span><h2>لديك سؤال؟ تواصل معنا</h2><p>يسعد فريق طفلي للألعاب بالإجابة عن استفساراتك من السبت إلى الخميس.</p></div><form id="contactForm"><input required placeholder="الاسم" aria-label="الاسم"><input required type="email" placeholder="البريد الإلكتروني" aria-label="البريد الإلكتروني"><textarea required placeholder="رسالتك" aria-label="رسالتك"></textarea><button class="btn btn-primary" type="submit">إرسال الرسالة</button></form></section>
+    <section class="container policy section" id="policy"><h2>الاستبدال والاسترجاع</h2><p>يمكنك طلب الاستبدال أو الاسترجاع خلال 7 أيام من الاستلام، بشرط بقاء المنتج في عبوته الأصلية وغير مستخدم. تواصل معنا عبر البريد support@tafli.example.</p></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><span class="brand-mark">☺</span><b>طفلي للألعاب</b><p>نتعلم، نلعب، نجتمع.</p></div><div><b>روابط سريعة</b><a href="#products">الألعاب</a><a href="#about">من نحن</a><a href="#policy">الاستبدال والاسترجاع</a><a href="admin.html">دخول المدير</a></div><div><b>خدمة العملاء</b><a href="#contact">تواصل معنا</a><a href="mailto:support@tafli.example">support@tafli.example</a><span>الرياض، المملكة العربية السعودية</span></div></div><div class="copyright">© 2025 طفلي للألعاب — جميع الحقوق محفوظة</div></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden></div>
+  <section class="modal product-modal" id="productModal" role="dialog" aria-modal="true" hidden></section>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><h2>سلة مشترياتك</h2><button class="close-btn" id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary"><div><span>المجموع</span><b id="cartTotal">0 ر.س</b></div><small>الشحن مجاني للطلبات فوق 250 ر.س</small><button class="btn btn-primary full" id="checkoutBtn">إتمام الشراء</button></div></aside>
+  <section class="modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" hidden><button class="close-btn modal-close" id="closeCheckout">×</button><div class="checkout-progress"><span class="active">1 <small>السلة</small></span><i></i><span>2 <small>التوصيل</small></span><i></i><span>3 <small>الدفع</small></span></div><div id="checkoutContent"></div></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
