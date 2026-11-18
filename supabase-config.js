@@ -1,7 +1,7 @@
-// ضع بيانات مشروع Supabase هنا بعد إنشاء المشروع.
-// المفتاح المسمى anon أو publishable آمن للاستخدام في الواجهة مع RLS.
-window.SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
-window.SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_OR_PUBLISHABLE_KEY';
+// إعدادات Supabase العامة لمتجر طفلي للألعاب.
+// هذا المفتاح publishable/anon مخصص للواجهة مع تفعيل RLS في قاعدة البيانات.
+window.SUPABASE_URL = 'https://zrfotqumadxengrrwtqv.supabase.co';
+window.SUPABASE_ANON_KEY = 'sb_publishable_sw7jOI3_ICrbg1IhEvoeWA_hqMghhfQ';
 
 if (window.supabase && !window.SUPABASE_URL.includes('YOUR-') && !window.SUPABASE_ANON_KEY.includes('YOUR_')) {
   window.supabaseClient = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
