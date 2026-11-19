@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261119-4" />
+  <link rel="stylesheet" href="styles.css?v=20261119-5" />
 </head>
 <body>
   <div class="announcement">شحن مجاني للطلبات بقيمة 250 ر.س فأكثر</div>
@@ -52,12 +52,13 @@
       <button class="category-card cat-blue" data-category="تعليمية"><span>🔬</span><b>تعليمية</b><small>اكتشف وتعلّم</small></button>
       <button class="category-card cat-orange" data-category="تشاركية"><span>👨‍👩‍👧</span><b>للعائلة</b><small>نلعب معًا</small></button>
       <button class="category-card cat-purple" data-skill="الإبداع"><span>🎨</span><b>إبداع وفن</b><small>أطلق الخيال</small></button>
-      <button class="category-card cat-green" data-age="3+"><span>🌱</span><b>للصغار</b><small>من 3 إلى 5 سنوات</small></button>
+      <button class="category-card cat-green" data-age="3+"><span>🌱</span><b>للصغار</b><small>من 3 سنوات فأكثر</small></button>
+      <button class="category-card cat-blue" data-skill="البناء والتركيب"><span>🧱</span><b>مكعبات وبناء</b><small>ركّب وابتكر</small></button>
     </div></section>
 
     <section class="products-section section" id="products"><div class="container"><div class="section-heading"><div><span class="eyebrow">مختارات طفلي</span><h2>ألعاب يحبها الصغار</h2></div><span id="resultsCount" class="muted"></span></div>
       <div class="toolbar"><label class="search-box">⌕<input id="searchInput" type="search" placeholder="ابحث عن لعبة أو مهارة..." /></label><button class="filter-toggle" id="filterToggle">☷ الفلاتر</button><select id="sortSelect" aria-label="ترتيب المنتجات"><option value="featured">الأكثر صلة</option><option value="priceAsc">السعر: الأقل أولًا</option><option value="priceDesc">السعر: الأعلى أولًا</option><option value="rating">الأعلى تقييمًا</option></select></div>
-      <div class="shop-layout"><aside class="filters" id="filters"><div class="filter-head"><b>تصفية النتائج</b><button id="clearFilters">مسح الكل</button></div><label>العمر المناسب<select id="ageFilter"><option value="">كل الأعمار</option><option value="2–4">2–4 سنوات</option><option value="3+">3 سنوات فأكثر</option><option value="6+">6 سنوات فأكثر</option><option value="7+">7 سنوات فأكثر</option><option value="8+">8 سنوات فأكثر</option></select></label><label>نوع اللعبة<select id="typeFilter"><option value="">الكل</option><option value="تعليمية">تعليمية</option><option value="تشاركية">تشاركية</option></select></label><label>المهارة المستهدفة<select id="skillFilter"><option value="">كل المهارات</option><option value="التركيز">التركيز</option><option value="الإبداع">الإبداع</option><option value="التواصل">التواصل</option><option value="حل المشكلات">حل المشكلات</option><option value="الرياضيات">الرياضيات</option></select></label><label>السعر الأقصى <output id="priceOutput">250 ر.س</output><input id="priceFilter" type="range" min="20" max="250" value="250" step="5"></label></aside><div class="product-grid" id="productGrid"></div></div>
+      <div class="shop-layout"><aside class="filters" id="filters"><div class="filter-head"><b>تصفية النتائج</b><button id="clearFilters">مسح الكل</button></div><label>العمر المناسب<select id="ageFilter"><option value="">كل الأعمار</option><option value="2–4">2–4 سنوات</option><option value="3+">3 سنوات فأكثر</option><option value="4+">4 سنوات فأكثر</option><option value="6+">6 سنوات فأكثر</option><option value="7+">7 سنوات فأكثر</option><option value="8+">8 سنوات فأكثر</option></select></label><label>نوع اللعبة<select id="typeFilter"><option value="">الكل</option><option value="تعليمية">تعليمية</option><option value="تشاركية">تشاركية</option></select></label><label>المهارة المستهدفة<select id="skillFilter"><option value="">كل المهارات</option><option value="التركيز">التركيز</option><option value="الإبداع">الإبداع</option><option value="البناء والتركيب">البناء والتركيب</option><option value="التواصل">التواصل</option><option value="حل المشكلات">حل المشكلات</option><option value="الرياضيات">الرياضيات</option></select></label><label>السعر الأقصى <output id="priceOutput">250 ر.س</output><input id="priceFilter" type="range" min="20" max="250" value="250" step="5"></label></aside><div class="product-grid" id="productGrid"></div></div>
     </div></section>
 
     <section class="offer container section"><div><span class="eyebrow">عرض هذا الأسبوع</span><h2>لعبتان بسعر خاص</h2><p>اجمع بين التعلم والمرح واحصل على خصم 15% عند شراء أي لعبتين تعليميتين.</p><a class="btn btn-dark" href="#products">تسوق العرض</a></div><div class="offer-shapes">🧠 <span>+</span> 🎲</div></section>
@@ -78,6 +79,6 @@
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
-  <script src="app.js?v=20261119-4"></script>
+  <script src="app.js?v=20261119-5"></script>
 </body>
 </html>
