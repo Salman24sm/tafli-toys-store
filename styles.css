@@ -34,3 +34,7 @@ body{background:#fffdfb}.announcement{background:linear-gradient(90deg,#20304a,#
 .review-form-wrap{margin-top:16px;border:1px solid #dfe8ef;border-radius:13px;padding:11px 13px;background:#fbfdff}.review-form-wrap summary{cursor:pointer;font-weight:800;color:var(--primary-dark);font-size:13px}.review-form{display:grid;gap:8px;margin-top:12px}.review-form input,.review-form select,.review-form textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px;font:inherit}.review-form textarea{min-height:80px;resize:vertical}.review-form small{font-size:10px}
 
 .brand-line{display:block;color:var(--muted);font-size:12px;font-weight:800;margin-bottom:4px}.source-link{display:inline-block;color:var(--primary-dark);font-size:11px;font-weight:800;margin:10px 0;text-decoration:underline}
+
+/* تصنيف المكعبات الجديد */
+.category-grid{grid-template-columns:repeat(5,1fr)}
+@media(max-width:800px){.category-grid{grid-template-columns:repeat(2,1fr)}}
