@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=20261122-5" />
   <link rel="apple-touch-icon" href="assets/favicon.png?v=20261122-5" />
-  <link rel="stylesheet" href="styles.css?v=20261122-5" />
+  <link rel="stylesheet" href="styles.css?v=20261122-6" />
 </head>
 <body>
   <div class="announcement">شحن مجاني للطلبات بقيمة 250 ر.س فأكثر</div>
@@ -47,6 +47,20 @@
       <div><span>👨‍👩‍👧</span><b>وقت يجمعنا</b><small>لعب تشاركي لكل العائلة</small></div>
     </section>
 
+    <section class="promo-banner container" id="promoBanner" aria-label="العروض الحالية">
+      <div class="promo-viewport">
+        <article class="promo-slide is-active promo-slide-gift" data-promo-slide>
+          <div class="promo-copy"><span class="eyebrow">خدمة جديدة</span><h2>غلّف لعبتك كهدية عيد ميلاد 🎁</h2><p>اختر تغليف عيد الميلاد لبنت أو ولد من السلة مقابل 8 ر.س لكل لعبة.</p><a class="btn btn-dark" href="#products">اختر لعبة</a></div><div class="promo-art" aria-hidden="true">🎁<span>+</span>🎈</div>
+        </article>
+        <article class="promo-slide promo-slide-learn" data-promo-slide>
+          <div class="promo-copy"><span class="eyebrow">عرض هذا الأسبوع</span><h2>خصم 15% عند شراء لعبتين تعليميتين</h2><p>اجمع بين التعلم والمرح، وابنِ سلة أجمل بميزانية أذكى.</p><a class="btn btn-dark" href="#products">اكتشف الألعاب</a></div><div class="promo-art" aria-hidden="true">🧠<span>+</span>🎲</div>
+        </article>
+        <article class="promo-slide promo-slide-blocks" data-promo-slide>
+          <div class="promo-copy"><span class="eyebrow">وصل حديثًا</span><h2>مكعبات وليجو من 59 ريالًا</h2><p>مجموعات كبيرة للبناء والإبداع واللعب العائلي، وكلها تحت 150 ريالًا.</p><a class="btn btn-dark" href="#products">شاهد المكعبات</a></div><div class="promo-art" aria-hidden="true">🧱<span>+</span>🏗️</div>
+        </article>
+      </div>
+      <div class="promo-nav"><button type="button" class="promo-arrow" id="promoPrev" aria-label="العرض السابق">‹</button><div class="promo-dots" role="tablist" aria-label="التنقل بين العروض"><button type="button" class="promo-dot is-active" data-promo-dot="0" role="tab" aria-label="العرض الأول" aria-selected="true"></button><button type="button" class="promo-dot" data-promo-dot="1" role="tab" aria-label="العرض الثاني" aria-selected="false"></button><button type="button" class="promo-dot" data-promo-dot="2" role="tab" aria-label="العرض الثالث" aria-selected="false"></button></div><button type="button" class="promo-arrow" id="promoNext" aria-label="العرض التالي">›</button></div>
+    </section>
     <section class="container intent-section" aria-labelledby="intentTitle"><div class="section-heading"><div><span class="eyebrow">اختيار أسهل</span><h2 id="intentTitle">تسوق بالطريقة التي تناسبك</h2></div></div><div class="intent-grid"><button class="intent-card intent-age" data-age="3+"><span>🌱</span><b>للأعمار الصغيرة</b><small>من 3 إلى 5 سنوات</small></button><button class="intent-card intent-budget" data-price="80"><span>🎁</span><b>هدايا أقل من 80 ر.س</b><small>اختيارات جميلة بميزانية بسيطة</small></button><button class="intent-card intent-family" data-category="تشاركية"><span>👨‍👩‍👧</span><b>نلعب معًا</b><small>ألعاب تشاركية للعائلة</small></button><button class="intent-card intent-skill" data-skill="الإبداع"><span>💡</span><b>ننمي الإبداع</b><small>ألعاب للفكر والخيال</small></button></div></section>
 
     <section class="container section" aria-labelledby="categoriesTitle"><div class="section-heading"><div><span class="eyebrow">اختياراتنا</span><h2 id="categoriesTitle">تسوق حسب الاهتمام</h2></div></div><div class="category-grid">
@@ -77,11 +91,11 @@
 
   <div class="modal-backdrop" id="modalBackdrop" hidden></div>
   <section class="modal product-modal" id="productModal" role="dialog" aria-modal="true" hidden></section>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><h2>سلة مشترياتك</h2><button class="close-btn" id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary"><div><span>المجموع</span><b id="cartTotal">0 ر.س</b></div><small>الشحن مجاني للطلبات فوق 250 ر.س</small><button class="btn btn-primary full" id="checkoutBtn">إتمام الشراء</button></div></aside>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><h2>سلة مشترياتك</h2><button class="close-btn" id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary"><div><span>المجموع</span><b id="cartTotal">0 ر.س</b></div><small id="shippingSummary">الشحن مجاني للطلبات فوق 250 ر.س</small><small id="giftWrapSummary" class="gift-wrap-summary"></small><button class="btn btn-primary full" id="checkoutBtn">إتمام الشراء</button></div></aside>
   <section class="modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" hidden><button class="close-btn modal-close" id="closeCheckout">×</button><div class="checkout-progress"><span class="active">1 <small>السلة</small></span><i></i><span>2 <small>التوصيل</small></span><i></i><span>3 <small>الدفع</small></span></div><div id="checkoutContent"></div></section>
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
-  <script src="app.js?v=20261122-4"></script>
+  <script src="app.js?v=20261122-6"></script>
 </body>
 </html>
