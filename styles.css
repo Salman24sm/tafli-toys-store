@@ -136,3 +136,7 @@ html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{
 .product-action-row .share-product{background:#eef7ff;color:#23618b;border:1px solid #c8e4f7}
 .product-action-row .share-product:hover{background:#dff1ff;color:#174d72}
 @media(max-width:420px){.product-action-row{grid-template-columns:1fr}.product-action-row .btn{width:100%}}
+
+/* رموز إرشادية داخل أزرار الإجراءات */
+.add-btn span,.detail-copy .btn span{display:inline-block;margin-left:4px;font-size:1.05em;line-height:1}
+.detail-copy .btn span{vertical-align:-1px}
