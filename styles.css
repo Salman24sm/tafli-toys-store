@@ -129,3 +129,10 @@ html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{
 .detail-copy .btn{margin-top:9px}
 .detail-copy .continue-shopping{background:#fff0f2;color:#c73852;border:1px solid #ffc4c9}
 .detail-copy .continue-shopping:hover{background:#ffe0e5;color:#a82e43}
+
+/* مشاركة المنتج بجوار خيارات السلة */
+.product-action-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}
+.product-action-row .btn{margin-top:0;min-width:0;padding-inline:10px;font-size:12px}
+.product-action-row .share-product{background:#eef7ff;color:#23618b;border:1px solid #c8e4f7}
+.product-action-row .share-product:hover{background:#dff1ff;color:#174d72}
+@media(max-width:420px){.product-action-row{grid-template-columns:1fr}.product-action-row .btn{width:100%}}
