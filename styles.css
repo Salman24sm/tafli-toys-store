@@ -124,3 +124,8 @@ html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{
 .promo-dot{width:9px;height:9px;background:rgba(255,255,255,.72)}.promo-dot.is-active{width:30px;background:#ffd45c}
 @media(max-width:800px){.promo-banner{border-radius:23px}.promo-viewport{min-height:390px}.promo-slide{grid-template-columns:1fr;padding:24px 22px 58px;text-align:center}.promo-copy{display:flex;align-items:center;flex-direction:column}.promo-copy h2{font-size:29px;line-height:1.2;margin-bottom:8px}.promo-copy p{font-size:14px;line-height:1.7;margin-bottom:14px}.promo-copy .btn{padding:11px 24px}.promo-art{order:-1;min-height:154px;margin-bottom:2px}.promo-art:before{width:202px;height:142px}.promo-art-image{width:180px;height:128px;border-width:5px}.promo-sticker{right:calc(50% - 105px);bottom:0;font-size:11px;padding:4px 10px}.promo-nav{right:14px;bottom:12px;left:14px}.promo-arrow{width:36px;height:36px;font-size:27px}}
 @media(max-width:480px){.promo-viewport{min-height:370px}.promo-slide{padding-inline:16px}.promo-copy h2{font-size:26px}.promo-art{min-height:140px}.promo-art-image{width:165px;height:116px}.promo-art:before{width:185px;height:130px}}
+
+/* أزرار واضحة داخل تفاصيل المنتج */
+.detail-copy .btn{margin-top:9px}
+.detail-copy .continue-shopping{background:#fff0f2;color:#c73852;border:1px solid #ffc4c9}
+.detail-copy .continue-shopping:hover{background:#ffe0e5;color:#a82e43}
