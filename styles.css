@@ -136,3 +136,9 @@ html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{
 .product-action-row .share-product{background:#eef7ff;color:#23618b;border:1px solid #c8e4f7}
 .product-action-row .share-product:hover{background:#dff1ff;color:#174d72}
 @media(max-width:420px){.product-action-row{grid-template-columns:1fr}.product-action-row .btn{width:100%}}
+
+/* مفتاح اللغة في الزاوية العلوية */
+.language-toggle{width:38px;height:38px;border:1px solid #d8e0eb;border-radius:50%;background:#fff;color:#253554;font:800 15px/1 Arial,sans-serif;cursor:pointer;box-shadow:0 4px 12px rgba(37,53,84,.1);transition:.2s}
+.language-toggle:hover,.language-toggle:focus-visible{background:#253554;color:#fff;border-color:#253554;outline:3px solid rgba(37,53,84,.16);outline-offset:2px}
+.lang-en .main-nav{direction:ltr}.lang-en .cart-drawer{right:auto;left:0;transform:translateX(-105%);box-shadow:20px 0 40px rgba(0,0,0,.15)}.lang-en .cart-drawer.open{transform:translateX(0)}
+@media(max-width:480px){.language-toggle{width:34px;height:34px;font-size:14px}.header-actions{gap:3px}}
