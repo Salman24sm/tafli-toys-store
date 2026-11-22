@@ -97,3 +97,30 @@ html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body{
 
 /* صور واقعية لبطاقات الأقسام */
 .category-card{position:relative;overflow:hidden;min-height:180px;padding:0;text-align:right;background:#eef4f8!important;border:0}.category-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease;filter:saturate(1.05)}.category-card:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,39,62,.02) 25%,rgba(25,39,62,.72) 100%);pointer-events:none}.category-card:hover .category-image{transform:scale(1.06)}.category-overlay{position:absolute;z-index:1;right:0;bottom:0;left:0;padding:42px 18px 16px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.28)}.category-overlay b,.category-overlay small{display:block}.category-overlay b{font-size:20px}.category-overlay small{font-size:13px;color:#fff}.category-card:focus-visible{outline:3px solid var(--primary);outline-offset:3px}@media(max-width:800px){.category-card{min-height:145px}.category-overlay{padding:34px 12px 11px}.category-overlay b{font-size:16px}.category-overlay small{font-size:11px}}
+
+/* بنرات حيوية مستوحاة من المراجع: تباين قوي وصور واقعية وتكوين واضح للجوال */
+.promo-banner{border-radius:28px;box-shadow:0 22px 52px rgba(37,53,84,.22);isolation:isolate}
+.promo-slide{overflow:hidden;grid-template-columns:minmax(0,1.25fr) minmax(230px,.75fr);padding:38px 64px 58px;position:absolute}
+.promo-slide:before,.promo-slide:after{content:'';position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+.promo-slide:before{width:340px;height:340px;right:-105px;top:-185px;background:rgba(255,255,255,.14)}
+.promo-slide:after{width:230px;height:230px;left:-95px;bottom:-145px;background:rgba(255,255,255,.11)}
+.promo-slide-gift{background:linear-gradient(118deg,#172a59 0%,#283d89 52%,#ee4f7c 100%)}
+.promo-slide-learn{background:linear-gradient(118deg,#4b1f86 0%,#823ca4 50%,#ff7b56 100%)}
+.promo-slide-blocks{background:linear-gradient(118deg,#073f70 0%,#0c6e99 50%,#17baa7 100%)}
+.promo-copy,.promo-art{position:relative;z-index:1}
+.promo-copy .eyebrow{display:inline-flex;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 11px;color:#fff2a8;font-weight:800;margin-bottom:10px}
+.promo-copy h2{max-width:650px;font-size:clamp(29px,4vw,48px);text-shadow:0 3px 16px rgba(0,0,0,.18)}
+.promo-copy p{max-width:555px;color:rgba(255,255,255,.91);font-size:16px;line-height:1.85}
+.promo-copy .btn{background:#fff;color:#20304a;border-radius:999px;padding:13px 27px;font-weight:900;box-shadow:0 8px 0 rgba(18,31,65,.2);transition:transform .2s,box-shadow .2s}
+.promo-copy .btn:hover,.promo-copy .btn:focus-visible{background:#fff8d6;color:#20304a;transform:translateY(-3px);box-shadow:0 11px 0 rgba(18,31,65,.2);outline:0}
+.promo-art{min-height:188px;display:grid;place-items:center;justify-items:center;align-content:center;gap:8px;direction:rtl}
+.promo-art:before{content:'';position:absolute;width:245px;height:185px;border-radius:40% 55% 38% 48%;background:rgba(255,255,255,.19);transform:rotate(-7deg);box-shadow:inset 0 0 0 2px rgba(255,255,255,.18),0 15px 26px rgba(11,27,63,.15)}
+.promo-art-image{position:relative;width:218px;height:158px;object-fit:cover;border:7px solid #fff;border-radius:26px;transform:rotate(5deg);box-shadow:0 15px 25px rgba(12,24,59,.26);filter:saturate(1.18) contrast(1.06)}
+.promo-sticker{position:absolute;z-index:2;bottom:4px;right:18px;background:#ffd45c;color:#253554;border:4px solid #fff;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:900;box-shadow:0 6px 12px rgba(18,31,65,.2);transform:rotate(-7deg)}
+.promo-nav{right:22px;bottom:15px;left:22px;z-index:3}
+.promo-arrow{width:40px;height:40px;border:2px solid rgba(255,255,255,.75);background:rgba(19,34,71,.3);font-size:30px;line-height:28px;box-shadow:0 4px 12px rgba(8,19,49,.18)}
+.promo-arrow:hover,.promo-arrow:focus-visible{background:#fff;color:#24345a;border-color:#fff;outline:0;transform:scale(1.08)}
+.promo-dots{align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:rgba(11,28,65,.26);backdrop-filter:blur(4px)}
+.promo-dot{width:9px;height:9px;background:rgba(255,255,255,.72)}.promo-dot.is-active{width:30px;background:#ffd45c}
+@media(max-width:800px){.promo-banner{border-radius:23px}.promo-viewport{min-height:390px}.promo-slide{grid-template-columns:1fr;padding:24px 22px 58px;text-align:center}.promo-copy{display:flex;align-items:center;flex-direction:column}.promo-copy h2{font-size:29px;line-height:1.2;margin-bottom:8px}.promo-copy p{font-size:14px;line-height:1.7;margin-bottom:14px}.promo-copy .btn{padding:11px 24px}.promo-art{order:-1;min-height:154px;margin-bottom:2px}.promo-art:before{width:202px;height:142px}.promo-art-image{width:180px;height:128px;border-width:5px}.promo-sticker{right:calc(50% - 105px);bottom:0;font-size:11px;padding:4px 10px}.promo-nav{right:14px;bottom:12px;left:14px}.promo-arrow{width:36px;height:36px;font-size:27px}}
+@media(max-width:480px){.promo-viewport{min-height:370px}.promo-slide{padding-inline:16px}.promo-copy h2{font-size:26px}.promo-art{min-height:140px}.promo-art-image{width:165px;height:116px}.promo-art:before{width:185px;height:130px}}
