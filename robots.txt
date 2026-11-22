@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /supabase-config.js
+Sitemap: https://salman24sm.github.io/tafli-toys-store/sitemap.xml
