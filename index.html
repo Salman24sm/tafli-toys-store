@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=20261122-5" />
   <link rel="apple-touch-icon" href="assets/favicon.png?v=20261122-5" />
-  <link rel="stylesheet" href="styles.css?v=20261122-phase3" />
+  <link rel="stylesheet" href="styles.css?v=20261122-phase4" />
 </head>
 <body>
   <div class="announcement">شحن مجاني للطلبات بقيمة 250 ر.س فأكثر</div>
@@ -24,7 +24,7 @@
       <a href="#home">الرئيسية</a><a href="#products">الألعاب</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-btn" id="favoritesBtn" aria-label="المفضلة">♡ <span id="favoritesCount">0</span></button>
+      <button class="icon-btn" id="favoritesBtn" aria-label="المفضلة">♡ <span id="favoritesCount">0</span></button><button class="icon-btn loyalty-btn" id="loyaltyBtn" aria-label="نقاطي ومكافآتي">★ <span id="loyaltyCount">0</span></button>
       <button class="icon-btn cart-btn" id="cartBtn" aria-label="سلة المشتريات">🛒 <span id="cartCount">0</span></button>
       <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
     </div>
@@ -93,7 +93,8 @@
 
   <div class="modal-backdrop" id="modalBackdrop" hidden></div>
   <section class="modal product-modal" id="productModal" role="dialog" aria-modal="true" hidden></section>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><h2>سلة مشترياتك</h2><button class="close-btn" id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary"><div><span>المجموع</span><b id="cartTotal">0 ر.س</b></div><small id="shippingSummary">الشحن مجاني للطلبات فوق 250 ر.س</small><small id="giftWrapSummary" class="gift-wrap-summary"></small><button class="btn btn-primary full" id="checkoutBtn">إتمام الشراء</button></div></aside>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><h2>سلة مشترياتك</h2><button class="close-btn" id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-summary"><div><span>المجموع</span><b id="cartTotal">0 ر.س</b></div><small id="shippingSummary">الشحن مجاني للطلبات فوق 250 ر.س</small><small id="giftWrapSummary" class="gift-wrap-summary"></small><small id="couponSummary" class="coupon-summary"></small><div class="coupon-box"><input id="couponInput" type="text" placeholder="لديك كوبون خصم؟" aria-label="كود الخصم"><button id="applyCoupon" type="button">تطبيق</button><small id="couponMessage" role="status"></small></div><button class="btn btn-primary full" id="checkoutBtn">إتمام الشراء</button></div></aside>
+  <section class="modal loyalty-modal" id="loyaltyModal" role="dialog" aria-modal="true" hidden><button class="close-btn modal-close" id="closeLoyalty">×</button><div class="loyalty-hero"><span class="loyalty-crown">★</span><div><span class="eyebrow">برنامج طفلي للمكافآت</span><h2>نقاطك تكبر مع كل لعبة</h2><p>اكسب نقطة لكل 10 ر.س من مشترياتك واستبدلها بخصومات.</p></div></div><div class="loyalty-balance"><small>رصيدك الحالي</small><strong id="loyaltyPoints">0</strong><span>نقطة</span></div><div id="activeReward" class="active-reward" hidden></div><h3>استبدل نقاطك</h3><div class="rewards-grid"><button type="button" data-redeem="50" data-discount="5"><b>خصم 5 ر.س</b><small>50 نقطة</small></button><button type="button" data-redeem="100" data-discount="12"><b>خصم 12 ر.س</b><small>100 نقطة</small></button><button type="button" data-redeem="200" data-discount="25"><b>خصم 25 ر.س</b><small>200 نقطة</small></button></div><small class="loyalty-note">تُضاف النقاط تلقائيًا بعد إتمام الطلب، وتحفظ على هذا الجهاز.</small></section>
   <section class="modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" hidden><button class="close-btn modal-close" id="closeCheckout">×</button><div class="checkout-progress"><span class="active">1 <small>السلة</small></span><i></i><span>2 <small>التوصيل</small></span><i></i><span>3 <small>الدفع</small></span></div><div id="checkoutContent"></div></section>
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
