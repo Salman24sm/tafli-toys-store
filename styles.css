@@ -38,3 +38,7 @@ body{background:#fffdfb}.announcement{background:linear-gradient(90deg,#20304a,#
 /* تصنيف المكعبات الجديد */
 .category-grid{grid-template-columns:repeat(5,1fr)}
 @media(max-width:800px){.category-grid{grid-template-columns:repeat(2,1fr)}}
+
+.cat-pink{background:#ffe5f0}.age-badge{position:absolute;bottom:10px;right:10px;background:var(--ink);color:#fff;border-radius:7px;padding:3px 8px;font-size:11px;font-weight:800;z-index:2}.category-grid{grid-template-columns:repeat(7,1fr)}
+@media(max-width:1000px){.category-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:800px){.category-grid{grid-template-columns:repeat(2,1fr)}}
