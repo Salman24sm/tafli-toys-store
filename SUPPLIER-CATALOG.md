@@ -9,3 +9,11 @@
 | مجموعة كرات رياضية ناعمة متنوعة | ألعاب الأولاد / رياضة وحركة | 3+ | 69 ر.س | بحث Amazon عن soft sports balls kids soccer basketball |
 
 تظهر شارة العمر داخل كل بطاقة منتج بصيغة واضحة مثل «العمر: 3+» أو «العمر: 6+». منتجات المسدسات مخصصة للعب الإسفنجي الآمن فقط، ويجب استخدامها تحت إشراف الكبار وبعيدًا عن الوجه.
+
+
+## إضافات قسم المكعبات (بحث خارجي)
+
+- **دلو مكعبات بناء ملونة 850 قطعة** — Clics Toys / Target — السعر المقترح في المتجر: 119 ريالًا — [مصدر البحث](https://www.target.com/s?searchTerm=Clics+Toys+Clics+Building+Blocks+Bucket+850+Pieces) — الصورة من نتيجة بحث تجارية لـ Target.
+- **مكعبات بناء كلاسيكية 1000 قطعة** — Babies & More — السعر المرصود: 59 ريالًا — [صفحة المنتج](https://www.babiesandmore.com/en-sa/toys-learning-educational-toys-games/building-block-set-pcs-BMGT-UG1000) — العمر 6+.
+- **مكعبات مغناطيسية ملونة 136 قطعة** — مصدر مشابه من فئة Magnetic Tiles — السعر المرصود لمجموعة 86 قطعة: 78.57 ريالًا — [صفحة الفئة في Noon](https://www.noon.com/saudi-en/toys-and-games/building-toys/magnetic-tiles/) — العمر 3+.
+- **مكعبات تركيب ملونة 1000 قطعة** — مصدر بحث مشابه من Noon — السعر المقترح في المتجر: 89 ريالًا — [صفحة الفئة](https://www.noon.com/saudi-en/toys-and-games/building-toys/).
